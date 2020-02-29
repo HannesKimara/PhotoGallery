@@ -1,0 +1,6 @@
+# Byte Compiled files
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
