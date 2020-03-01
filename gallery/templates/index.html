@@ -1,7 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content%}
-  <div class = "fh-container valign-wrapper center">
-    <p>Index works</p>
-  </div>
+<div class = "container">
+    
+</div>
+    <div>
+        <div class = "ml-2 mr-2">
+            <div class = "row">
+                {% for image in images %}
+                <div class = "col l2 s6">
+                    <div class="card card-small hoverable ga-card">
+                        <div class="card-image">
+                          <img src="{{image.image.url}}">
+                        </div>
+                        <div class="card-content">
+                          <p>{{image.image_name}}</p>
+                        </div>
+                      </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
