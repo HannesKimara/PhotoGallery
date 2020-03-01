@@ -1,0 +1,25 @@
+{% for image in images %}
+<div class = "col l2 s6">
+  <a href="#modal{{image.id}}" class = "modal-trigger">
+    <div class="card card-small hoverable ga-card">
+      <div class="card-image">
+        <img src="{{image.image.url}}">
+      </div>
+      <div class="card-content black-text">
+        <p>{{image.image_name}}</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div id="modal{{image.id}}" class="modal modal-fixed-footer ga-modal">
+  <img class="materialboxed" width="100%" src="{{image.image.url}}">
+  <div class="modal-content">
+    <h4>{{image.image_name}}</h4>
+    <h6 class = "grey-text"> - {{image.pub_date}}</h6><br>
+    <div class="chip"><i class="tiny material-icons">location_on</i>{{image.location}}</div>
+    <div class="chip"><i class="tiny material-icons">label</i>{{image.category}}</div>
+    <p>{{image.image_description}}</p>
+  </div>
+</div>
+{% endfor %}
