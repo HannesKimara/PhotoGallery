@@ -1,5 +1,5 @@
 .fh-container{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .ml-2{
@@ -15,22 +15,26 @@
 }
 
 .ga-card{
-    border-radius: 1rem!important;
+    border-radius: 1rem;
 }
 
-img{
+.ga-card img{
     border-top-left-radius: 1rem!important;
     border-top-right-radius: 1rem!important;
 }
 
 .input-field input[type=search] {
-    display: inline-block!important;
-    background-color: rgb(241, 239, 239)!important;
-    padding-top: 0.7rem!important;
-    padding-bottom: 0.7rem!important;
-    border-radius: 0.4rem!important;
+    display: inline-block;
+    background-color: rgb(241, 239, 239);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 0.4rem;
 }
 
 ::placeholder {
     color: #000000!important;
-  }
+}
+
+.ga-modal{
+    border-radius: 1rem!important;
+}

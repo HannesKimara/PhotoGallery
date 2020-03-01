@@ -1,25 +1,35 @@
 {% extends 'base.html' %}
 
 {% block content%}
-<div class = "container">
-    
-</div>
-    <div>
-        <div class = "ml-2 mr-2">
-            <div class = "row">
-                {% for image in images %}
-                <div class = "col l2 s6">
-                    <div class="card card-small hoverable ga-card">
-                        <div class="card-image">
-                          <img src="{{image.image.url}}">
-                        </div>
-                        <div class="card-content">
-                          <p>{{image.image_name}}</p>
-                        </div>
-                      </div>
-                </div>
-                {% endfor %}
+<div class = "fh-container">
+<br>
+  <div class = "ml-2 mr-2">
+    <div class = "row">
+
+        {% for image in images %}
+        <div class = "col l2 s6">
+          <a href="#modal{{image.id}}" class = "modal-trigger">
+            <div class="card card-small hoverable ga-card">
+              <div class="card-image">
+                <img src="{{image.image.url}}">
+              </div>
+              <div class="card-content black-text">
+                <p>{{image.image_name}}</p>
+              </div>
             </div>
+          </a>
         </div>
-    </div>
+
+        <div id="modal{{image.id}}" class="modal modal-fixed-footer ga-modal">
+          <img class="materialboxed" width="100%" src="{{image.image.url}}">
+          <div class="modal-content">
+            <h4>{{image.image_name}}</h4>
+            <h6 class = "grey-text">{{image.pub_date}}</h6>
+            <p>{{image.image_description}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+</div>
 {% endblock %}
