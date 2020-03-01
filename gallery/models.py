@@ -48,7 +48,7 @@ class Image(models.Model):
 
     @classmethod
     def get_image_by_id(cls, image_id):
-        _image = cls.objects.filter(pk = image_id)
+        _image = cls.objects.filter(pk = image_id).first()
         return _image
 
     @classmethod
