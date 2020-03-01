@@ -24,7 +24,9 @@
           <img class="materialboxed" width="100%" src="{{image.image.url}}">
           <div class="modal-content">
             <h4>{{image.image_name}}</h4>
-            <h6 class = "grey-text">{{image.pub_date}}</h6>
+            <h6 class = "grey-text"> - {{image.pub_date}}</h6><br>
+            <div class="chip"><i class="tiny material-icons">location_on</i>{{image.location}}</div>
+            <div class="chip"><i class="tiny material-icons">label</i>{{image.category}}</div>
             <p>{{image.image_description}}</p>
           </div>
         </div>
