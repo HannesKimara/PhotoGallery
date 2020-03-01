@@ -4,3 +4,9 @@ __pycache__/
 
 # Environment files
 .env
+
+# File Databases
+db.sqlite3
+
+# Media Files
+media/
