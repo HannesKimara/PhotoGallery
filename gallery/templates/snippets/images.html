@@ -15,7 +15,11 @@
 <div id="modal{{image.id}}" class="modal modal-fixed-footer ga-modal">
   <img class="materialboxed" width="100%" src="{{image.image.url}}">
   <div class="modal-content">
-    <h4>{{image.image_name}}</h4>
+    <h4>{{image.image_name}}
+      <a class="waves-effect waves-light" onclick="clipboardCopy('{{ request.get_host }}{{image.image.url}}')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+      </a>
+    </h4>
     <h6 class = "grey-text"> - {{image.pub_date}}</h6><br>
     <div class="chip"><i class="tiny material-icons">location_on</i>{{image.location}}</div>
     <div class="chip"><i class="tiny material-icons">label</i>{{image.category}}</div>
