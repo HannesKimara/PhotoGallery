@@ -50,6 +50,7 @@ This project was created and is maintained by Hannes Kimara
 ## Built with
 - Python 3.7.6
 - Django 3.0.3
+- Materialize 1.0.0
 
 ## License
 This is licensed under MIT License Copyright(2020) Hannes Kimara
