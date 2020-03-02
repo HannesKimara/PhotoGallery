@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function clipboardCopy(text) {
     navigator.clipboard.writeText(text).then(
         function(){
-            M.toast({html: `Copied ${text} to clipboard`, 
+            M.toast({html: 'Copied text to clipboard', 
                     displayLength: 2500,
             })
         }
