@@ -10,3 +10,6 @@ db.sqlite3
 
 # Media Files
 media/
+
+# Windows thumbnail files
+Thumbs.db

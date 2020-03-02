@@ -9,6 +9,9 @@ Gallery App to view photos that interset you.
 #### Database Implementation(Entity Relationship Diagram)
 ![Entity Relation Diagram](docs/images/photo_gallery.png)
 
+#### UI Implementation(Landing Page)
+!['UI Design'](docs/images/ui_demo.png)
+
 ## Getting Started
 To get started run this in a virtual environment:
 
