@@ -13,3 +13,8 @@ def search_results(request):
         return render(request, 'search.html', {'images': []})
 
     return render(request, 'search.html', {'images': related_images})
+
+def filter_location(request, loc):
+    loc_images = Image.filter_by_location(loc)
+
+    return render(request, 'location.html', {'images': loc_images})
