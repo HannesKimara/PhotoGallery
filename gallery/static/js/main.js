@@ -28,5 +28,6 @@ function clipboardCopy(text) {
             M.toast({html: `Copied ${text} to clipboard`, 
                     displayLength: 2500,
             })
-        })
+        }
+    )
 }
