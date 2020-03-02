@@ -1,6 +1,7 @@
 # PhotoGallery
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/HannesKimara/PhotoGallery/blob/master/LICENSE) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/HannesKimara/PhotoGallery/blob/master/LICENSE)
+[![codebeat badge](https://codebeat.co/badges/b6fe12b4-8626-4491-bbb9-8830e45496c4)](https://codebeat.co/projects/github-com-hanneskimara-photogallery-master)
 
 ## Description
 Gallery App to view photos that interset you.
